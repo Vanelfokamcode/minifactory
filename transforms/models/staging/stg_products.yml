@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_products
+    columns:
+      - name: code
+        tests:
+          - not_null
+          - unique
+      - name: additives_n
+        tests:
+          - not_null
+      - name: brands_tags
+        tests:
+          - not_null

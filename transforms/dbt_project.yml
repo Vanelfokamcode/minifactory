@@ -1,0 +1,15 @@
+name: 'transforms'
+version: '1.0.0'
+profile: 'transforms'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+models:
+  transforms:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
